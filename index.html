@@ -1,9 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Verstappen Fan Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(to right, #e10600, #1e1e1e);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .content h2 {
+            color: #e10600;
+            border-bottom: 2px solid #e10600;
+            padding-bottom: 10px;
+        }
+
+        .bio {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #e10600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+<header>
+    <h1>Max Verstappen</h1>
+    <p>Formula 1 World Champion & Red Bull Racing Driver</p>
+</header>
+
+<div class="content">
+    <h2>About Max</h2>
+    <div class="bio">
+        <p>Max Emilian Verstappen is a Dutch racing driver currently competing in Formula One with Red Bull Racing. Known for his aggressive style and brilliant overtakes, Max became the youngest driver to start a Formula One race and has since broken numerous records, including becoming a multi-time World Champion.</p>
+    </div>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Max_Verstappen_2023.jpg" alt="Max Verstappen 2023">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Max_Verstappen_2017_Malaysia_3.jpg" alt="Max Verstappen Racing">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Max_Verstappen_2021_British_GP_1.jpg" alt="Max Verstappen Driving">
+    </div>
+</div>
+
+<footer>
+    <p>Fan page for Max Verstappen. Not affiliated with Red Bull Racing or Formula 1. | <a href="https://en.wikipedia.org/wiki/Max_Verstappen" target="_blank">Learn more</a></p>
+</footer>
+
 </body>
 </html>
